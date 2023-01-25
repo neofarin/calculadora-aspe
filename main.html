@@ -1,0 +1,33 @@
+<script type="module">
+    import { calculadora } from './calculadora.js';
+    document.getElementById("calcularBtn").addEventListener("click", function(){
+        var valorResidencia = document.getElementById("valorResidencia").value;
+        var valorPension = document.getElementById("valorPension").value;
+        var valorAlquiler = document.getElementById("valorAlquiler").value;
+        var resultado = calculadora(valorResidencia, valorPension, valorAlquiler);
+        var resultadoEnEuros = resultado.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' });
+        document.getElementById("resultado").innerHTML = "El importe que AS Pensión aportará a tu residencia será de: " + resultadoEnEuros;
+        document.getElementById("resultado").style.color = "red";
+        document.getElementById("resultado").style.fontSize = "20px";
+    });
+</script>
+
+
+<form>
+    <label for="valorResidencia">Valor de la residencia:</label>
+    <input type="text" id="valorResidencia" name="valorResidencia">
+    <br>
+    <label for="valorPension">Valor de la pensión recibida:</label>
+    <input type="text" id="valorPension" name="valorPension">
+    <br>
+    <label for="valorAlquiler">Valor del ingreso mensual por alquiler:</label>
+    <input type="text" id="valorAlquiler" name="valorAlquiler">
+    <br>
+    <br>
+    <button type="button" id="calcularBtn">Calcular</button>
+  </form>
+  <br>
+  <p id="resultado"></p>
+
+  
+  

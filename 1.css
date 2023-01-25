@@ -1,0 +1,39 @@
+#valorResidencia, #valorPension, #valorAlquiler {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    }
+    
+    #calcularBtn {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    }
+    
+    #resultado {
+    margin: 0.5em;
+    font-size: 1.2em;
+    }
+    
+    form {
+    margin: 2em;
+    }
+    
+    label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    }
+    
+    button:hover {
+    background-color: #3e8e41;
+    }
+    
+    input:focus {
+    border-color: blue;
+    }
